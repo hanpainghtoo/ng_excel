@@ -1,7 +1,9 @@
 <div style="width: 50%;margin-left: 30%;margin-top: 20px;">
   <h3 class="my-4" style="text-align: center;">Import & Export Excel in <span class="text-primary">Angular</span></h3>
   <input class="my-2" type="file" (change)="readExcel($event)">
-  <table class="table">
+  <button (click)="exportexcel()">Export to Excel</button>
+  
+  <table id="excel-table" class="table">
     <thead class="table-dark">
       <tr>
         <th>id</th>
